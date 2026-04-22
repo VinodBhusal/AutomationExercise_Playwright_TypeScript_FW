@@ -1,6 +1,6 @@
 import { APIRequestContext } from "@playwright/test";
 export class APIUtil{
-  private request: APIRequestContext;
+  readonly request: APIRequestContext;
 
   constructor(request: APIRequestContext) {
     this.request = request;

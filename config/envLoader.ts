@@ -4,6 +4,8 @@ import path from 'path';
 // 1. Decide env (default = dev)
 const env = process.env.ENV || 'dev';
 
+
+
 // 2. Load correct file
 dotenv.config({
   path: path.resolve(`config/env/.env.${env}`)
