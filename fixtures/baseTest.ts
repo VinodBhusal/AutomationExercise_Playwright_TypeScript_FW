@@ -5,6 +5,7 @@ import { ProductPage } from '../pageObject/ProductPage';
 import { CartPage } from '../pageObject/CartPage'
 import { APIUtil } from '../utils/apiUtils';
 import { LoginPage } from '../pageObject/LoginPage';
+import { ContactUsPage } from '../pageObject/ContactUsPage';
 
 
 interface Fixtures {
@@ -13,6 +14,7 @@ interface Fixtures {
     homePage: HomePage;
     productPage: ProductPage;
     cartPage: CartPage;
+    contactUsPage: ContactUsPage;
     apiUtil: APIUtil
 
 };
@@ -39,6 +41,10 @@ export const test = base.extend<Fixtures>({
     cartPage: async ({ page }, use) => {
         const cartPage = new CartPage(page);
         await use(cartPage);
+    },
+ contactUsPage: async ({ page }, use) => {
+        const contactUsPage = new ContactUsPage(page);
+        await use(contactUsPage);
     },
 
     apiUtil: async ({ request }, use) => {
