@@ -61,208 +61,64 @@
   },
   "suites": [
     {
-      "title": "auth\\auth.spec.ts",
-      "file": "auth/auth.spec.ts",
+      "title": "contactUs.spec.ts",
+      "file": "contactUs.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Auth Tests",
-          "file": "auth/auth.spec.ts",
-          "line": 9,
-          "column": 6,
-          "specs": [
+          "title": "verifyConatctUsPage",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Register User",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Web",
+              "projectName": "Web",
+              "results": [
                 {
-                  "timeout": 30000,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14213,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-04-24T14:31:18.113Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Web",
-                  "projectName": "Web",
-                  "results": [
+                  "attachments": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 26264,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-23T17:22:09.813Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\Automation\\AutomationExercise_Playwright_TypeScript_FW\\test-results\\auth-auth-Auth-Tests-Register-User-Web\\test-finished-1.png"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation\\AutomationExercise_Playwright_TypeScript_FW\\test-results\\auth-auth-Auth-Tests-Register-User-Web\\trace.zip"
-                        }
-                      ]
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Automation\\AutomationExercise_Playwright_TypeScript_FW\\test-results\\contactUs-verifyConatctUsPage-Web\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Automation\\AutomationExercise_Playwright_TypeScript_FW\\test-results\\contactUs-verifyConatctUsPage-Web\\trace.zip"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "id": "11ab049aabb515b3eeb7-fad9e914d363487d3555",
-              "file": "auth/auth.spec.ts",
-              "line": 11,
-              "column": 10
-            },
-            {
-              "title": "Login with valid credentials",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Web",
-                  "projectName": "Web",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 14388,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-23T17:22:44.557Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\Automation\\AutomationExercise_Playwright_TypeScript_FW\\test-results\\auth-auth-Auth-Tests-Login-with-valid-credentials-Web\\test-finished-1.png"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation\\AutomationExercise_Playwright_TypeScript_FW\\test-results\\auth-auth-Auth-Tests-Login-with-valid-credentials-Web\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "11ab049aabb515b3eeb7-d04d1569e193db7926d6",
-              "file": "auth/auth.spec.ts",
-              "line": 28,
-              "column": 10
-            },
-            {
-              "title": "Login with invalid credentials",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Web",
-                  "projectName": "Web",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5567,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-23T17:22:59.761Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\Automation\\AutomationExercise_Playwright_TypeScript_FW\\test-results\\auth-auth-Auth-Tests-Login-with-invalid-credentials-Web\\test-finished-1.png"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation\\AutomationExercise_Playwright_TypeScript_FW\\test-results\\auth-auth-Auth-Tests-Login-with-invalid-credentials-Web\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "11ab049aabb515b3eeb7-47c299d12cf56a41bcb1",
-              "file": "auth/auth.spec.ts",
-              "line": 41,
-              "column": 10
-            },
-            {
-              "title": "Register with existing email",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Web",
-                  "projectName": "Web",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 7616,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-04-23T17:23:05.603Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "D:\\Automation\\AutomationExercise_Playwright_TypeScript_FW\\test-results\\auth-auth-Auth-Tests-Register-with-existing-email-Web\\test-finished-1.png"
-                        },
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "D:\\Automation\\AutomationExercise_Playwright_TypeScript_FW\\test-results\\auth-auth-Auth-Tests-Register-with-existing-email-Web\\trace.zip"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "11ab049aabb515b3eeb7-17a3cf868e9cf139e2c9",
-              "file": "auth/auth.spec.ts",
-              "line": 51,
-              "column": 10
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "46b4c5ef60923d5ca309-fc96b93d024ac8bba654",
+          "file": "contactUs.spec.ts",
+          "line": 5,
+          "column": 6
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-04-23T17:22:07.311Z",
-    "duration": 67150.108,
-    "expected": 4,
+    "startTime": "2026-04-24T14:31:13.978Z",
+    "duration": 21218.966999999997,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

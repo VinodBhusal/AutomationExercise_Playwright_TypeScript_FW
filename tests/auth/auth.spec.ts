@@ -6,9 +6,9 @@ import { existingUserEmail } from '../../test-data/userData';
 
 import { expect } from '@playwright/test';
 
-test.describe('Auth Tests', () => {
+test('Auth Tests', () => {
 
-    test.only('Register User', async ({ registrationPage, homePage, page }) => {
+    test('Register User', async ({ registrationPage, homePage, page }) => {
         const user = getNewUSerData();
 
         await registrationPage.goto()
@@ -25,7 +25,7 @@ test.describe('Auth Tests', () => {
         await homePage.verifyAccountIsDeleted();
     });
 
-    test.only('Login with valid credentials', async ({ registrationPage, loginPage, homePage }) => {
+    test('Login with valid credentials', async ({ registrationPage, loginPage, homePage }) => {
         const validUserDeatils = getNewUSerData();
         await registrationPage.goto();
         await registrationPage.SignUpUser(validUserDeatils.userName, validUserDeatils.newUserEmailInputBox);
@@ -38,23 +38,19 @@ test.describe('Auth Tests', () => {
         await homePage.verifyAccountIsDeleted();
     });
 
-    test.only('Login with invalid credentials', async ({ registrationPage, loginPage }) => {
+    test('Login with invalid credentials', async ({ registrationPage, loginPage }) => {
         const invalidUserDeatils = invalidUserEmail();
         await registrationPage.goto();
         await loginPage.verifyUserLogin(invalidUserDeatils.invalidEmail, invalidUserDeatils.password)
         await loginPage.verifyInvalidLoginMessage();
-
-
     });
 
 
-    test.only('Register with existing email', async ({ registrationPage }) => {
+    test('Register with existing email', async ({ registrationPage }) => {
         const existingUser = existingUserEmail();
         await registrationPage.goto();
         await registrationPage.SignUpUser(existingUser.userName, existingUser.existingEmail);
         await registrationPage.verifyExistingUserRegistration();
-
-
     });
 
 
